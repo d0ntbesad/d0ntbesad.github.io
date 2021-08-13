@@ -3,7 +3,16 @@
     <title>sad Zoë :(</title>
   </head>
   <body>
-    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe>
+    <img src="letter.jpg">
   </body>
+  <script>
+    let res = "";
+    let first = true
+    while (res.toLowerCase() !== "le petit prince") {
+      res = window.prompt((!first ? "Ce n'est pas " + res + ". \n" : "") + "Titre du tout premier livre que je t'ai offert ?" );
+      first = false;
+    }
+    document.getElementById('text').innerHTML = "yassss";
+
+  </script>
 </html>
