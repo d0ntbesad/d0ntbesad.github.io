@@ -7,10 +7,10 @@
   <script>
     let res = "";
     let first = true
-    while (res.toLowerCase() !== "le petit prince") {
-      res = window.prompt((!first ? "Ce n'est pas " + res + ". \n" : "") + "Titre du tout premier livre que je t'ai offert ?" );
-      first = false;
-    }
+    // while (res.toLowerCase() !== "le petit prince") {
+    //   res = window.prompt((!first ? "Ce n'est pas " + res + ". \n" : "") + "Titre du tout premier livre que je t'ai offert ?" );
+    //   first = false;
+    // }
     if (navigator.userAgent.match(/Android/i) ||
       navigator.userAgent.match(/webOS/i) ||
       navigator.userAgent.match(/iPhone/i) ||
@@ -18,10 +18,12 @@
       navigator.userAgent.match(/iPod/i) ||
       navigator.userAgent.match(/BlackBerry/i) ||
       navigator.userAgent.match(/Windows Phone/i)) {
-    document.location = "http://d0ntbesad.github.io/moja_Zoë.pdf";
+    // document.location = "http://d0ntbesad.github.io/moja_Zoë.pdf";
+    document.getElementsByTagName('body')[0].innerHTML = "phone";
   }
   else {
-    window.location.replace("http://d0ntbesad.github.io/moja_Zoë.pdf");
+    // window.location.replace("http://d0ntbesad.github.io/moja_Zoë.pdf");
+    document.getElementsByTagName('body')[0].innerHTML = "web";
   }
     
 
